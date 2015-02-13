@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic the Gathering HTML Decklist Generator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="lib/markdown.js"></script>
+
+    <script src="https://cdn.rawgit.com/NickolasReynolds/9305934/raw/ba30c0e5ddb5f56cf69dcc5e8bc5b20717936830/inlinetooltip.1.0.js"></script>
+    <script src="https://cdn.rawgit.com/NickolasReynolds/9306194/raw/a23cf6c5f02d4edae8a443098e195070e6652252/inlinemtg.1.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/NickolasReynolds/9305955/raw/141a6fc49769df24d81fc4bf9377e325fe185ef5/inlinetooltip.1.0.css">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Decklist</h2>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <textarea id="decklist">
+Enchantments
+============
+2 Barren Glory
+
+Creatures
+=========
+4 Academy Rector
+4 Simian Spirit Guide
+4 Street Wraith
+
+-----------------------
+
+Spells
+======
+4 Cabal Therapy
+4 Dark Ritual
+2 Footsteps of the Goryo
+4 Gitaxian Probe
+4 Infernal Tutor
+4 Thoughtseize
+
+Artifacts
+=========
+4 Lion's Eye Diamond
+4 Lotus Petal
+
+--------------------
+
+Lands
+=====
+4 Ancient Spring
+4 Archaeological Dig
+4 Crystal Vein
+4 Glimmervoid
+          </textarea>
+        </div>
+        <div class="col-md-4 help">
+          <div>Enter your decklist here.</div>
+          <div>Enter the quantity and card names using either of the following:</div>
+          <ul>
+            <li>2x Black Lotus</li>
+            <li>2 Black Lotus</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Preview</h2>
+        </div>
+        <div class="col-md-4"></div>
+      </div>  
+      <div class="row">
+        <div class="col-md-8">
+          <div id="preview"></div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Source</h2>
+        </div>
+        <div class="col-md-4"></div>
+      </div>  
+      <div class="row">
+        <div class="col-md-8">
+          <pre id="source"></pre>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
