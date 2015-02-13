@@ -10,7 +10,7 @@ function parseDecklist(raw) {
 	//var header = null;
 	var tokens = markdown.parse(raw);
 	for (var i = 1; i < tokens.length; i++) {
-		if (tokens[i][0] == 'hr') {
+		if (tokens[i][0] == 'hr' && columns.length < 4) {
 			column = $('<div></div>');
 			columns.push(column);
 		} else if (tokens[i][0] == 'header') {
@@ -51,4 +51,6 @@ $(function() {
 	$("#decklist").change(onChange);
 
 	parseDecklist($("#decklist").val());
+
+	$("#decklist").height($("#decklistHelp").height());
 });
