@@ -1,0 +1,113 @@
+.decklist {
+  background: #000 url('http://code.divshot.com/geo-bootstrap/img/stars.gif') top left;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: table-row;
+  border-collapse: separate;
+  color: yellow;
+}
+
+.title {
+  display: table-caption;
+  border-top: 6px ridge #bbb;
+  border-left: 6px ridge #bbb;
+  border-right: 6px ridge #bbb;
+  background-image: url('http://code.divshot.com/geo-bootstrap/img/flames.gif');
+  background-position: center;
+  text-align: center;
+}
+
+.title h2 {
+  color: pink;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+
+  animation: flashColor .5s linear infinite;
+  -webkit-animation: flashColor .5s linear infinite;
+}
+
+.decklist .column {
+  display: table-cell;
+  border-top: 6px ridge #bbb;
+  border-bottom: 6px ridge #bbb;
+  border-left: 6px ridge #bbb;
+  float: none;
+  width: inherit;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-image: url('http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-clip: border-box;
+}
+
+.decklist .column:last-child {
+  border-right: 6px ridge #bbb;
+}
+
+.decklist .column .section {
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+  margin-bottom: 1px;
+  margin-top:30px;
+  text-decoration: underline;
+}
+
+.decklist .column .section:first-child {
+  margin-top:15px;
+}
+
+.decklist .card a {
+  color: #6f0;
+  font-weight: bold;
+}
+
+.iltt a img{
+  max-width: 233px;
+  max-height: 310px;
+}
+
+.decklist .count {
+  margin-right: 5px;
+  border: 1px red solid;
+  background: black;
+}
+
+@keyframes flashColor {
+    0% {
+        color: yellow;
+        opacity:1;
+    }
+    33% {
+        color: green;
+    }
+    66% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@-webkit-keyframes flashColor {
+    0% {
+        color: yellow;
+        opacity:1;
+    }
+    33% {
+        color: green;
+    }
+    66% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}

@@ -1,24 +1,9 @@
-.decklist {
-
-}
-
-.decklist .column {
-
-}
-
-
-.decklist .column .section {
-
-}
-
-.decklist .column .section:first-child {
-
-}
-
-.decklist .card {
-
-}
-
+.decklist {}
+.decklist .title {}
+.decklist .column {}
+.decklist .column .section {}
+.decklist .card {}
+.decklist .count {	margin-right: 5px; }
 .iltt a img{
 	max-width: 233px;
 	max-height: 310px;
