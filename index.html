@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
     <script src="lib/markdown.js"></script>
 
     <script src="https://cdn.rawgit.com/NickolasReynolds/9305934/raw/ba30c0e5ddb5f56cf69dcc5e8bc5b20717936830/inlinetooltip.1.0.js"></script>
     <script src="https://cdn.rawgit.com/NickolasReynolds/9306194/raw/a23cf6c5f02d4edae8a443098e195070e6652252/inlinemtg.1.0.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/NickolasReynolds/9305955/raw/141a6fc49769df24d81fc4bf9377e325fe185ef5/inlinetooltip.1.0.css">
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/NickolasReynolds/9305955/raw/141a6fc49769df24d81fc4bf9377e325fe185ef5/inlinetooltip.1.0.css">-->
 
     <link rel="stylesheet" href="css/style.css">
+    <link id="decklistStyle" rel="stylesheet" href="css/decklist_styles/default.css">
   </head>
   <body>
     <div class="container">
-
+      <div class="row">
+        <div class="col-md-10"><h1>MTG HTML Decklist Generator</h1></div>
+      </div>
       <div class="row">
         <div class="col-md-8">
           <h2>Decklist</h2>
@@ -82,7 +85,7 @@ Lands
             <span>Creatures</span><br/>
             <span>=========</span>
           </center>
-          <div>Create up to four columns by putting 3 or more hyphens on a line by themselves with a blank line above:</div>
+          <div>Create a new column (up to a max of 4) by putting 3 or more hyphens on a line by themselves with a blank line above:</div>
           <center style="font-family: monospace">
             <span>---------</span>
           </center>
@@ -98,7 +101,16 @@ Lands
         <div class="col-md-8">
           <div id="preview"></div>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div>This preview will show what the decklist will look like.  It will change as you change the content in the textbox above.</div><br/>
+          <div>Select a style from the dropdown below:</div><br/>
+          <div>
+             <select id="styleDropdown">
+              <option value="default" selected="selected">Default</option>
+              <option value="mtg_salvation">MTG Salvation</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-8">
@@ -108,9 +120,14 @@ Lands
       </div>  
       <div class="row">
         <div class="col-md-8">
-          <pre id="source"></pre>
+          <textarea id="source"></textarea>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          Copy this source into a web page.
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col-md-12"><center><a href="https://github.com/docmarionum1/mtg-html-decklist-generator">View on Github</a><br/>© 2015 <a href="http://jeremyneiman.com">Jeremy Neiman</a>    </center></div>
       </div>
     </div>
 
