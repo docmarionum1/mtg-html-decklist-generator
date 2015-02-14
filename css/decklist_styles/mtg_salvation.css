@@ -10,8 +10,8 @@
 	border-top: 4px solid #869BBF;
 	border-left: 4px solid #869BBF;
 	border-right: 4px solid #869BBF;
-	margin-left: 1px;
-	margin-right: 1px;
+	-webkit-margin-start: 1px;
+	-webkit-margin-end: 1px;
 	background: #869BBF;
 }
 
@@ -70,4 +70,9 @@
 
 .decklist .count {
 	margin-right: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
