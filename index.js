@@ -7,12 +7,7 @@ var includes = [
 var deckStyle;
 
 function parseDecklist(raw) {
-	//var decklist = {};
 	var decklistContainer = $('<div></div>');
-
-	var style = $('<style></style>').html(deckStyle);
-	decklistContainer.append(style);
-
 	var decklist = $('<div></div>').addClass('decklist').addClass('row');
 	
 	var column = $('<div></div>').addClass('column');
@@ -53,6 +48,10 @@ function parseDecklist(raw) {
 	decklistContainer.append(decklist);
 
 	$("#preview").html(decklistContainer.html());
+
+	var style = $('<style></style>').html(deckStyle);
+	decklistContainer.append(style);
+
 	$("#source").text(includes + decklistContainer.html());
 
 	inlinemtg.linkcards( $( document ) );
