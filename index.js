@@ -1,15 +1,15 @@
 var includes = [
 	'<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">',
 	'<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>',
-	'<script src="//cdn.rawgit.com/NickolasReynolds/9305934/raw/ba30c0e5ddb5f56cf69dcc5e8bc5b20717936830/inlinetooltip.1.0.js"></script>',
-    '<script src="//cdn.rawgit.com/NickolasReynolds/9306194/raw/a23cf6c5f02d4edae8a443098e195070e6652252/inlinemtg.1.0.js"></script>'].join("");
+	'<script src="//docmarionum1.github.io/mtg-html-decklist-generator/lib/inlinetooltip.1.0.js"></script>',
+    '<script src="//docmarionum1.github.io/mtg-html-decklist-generator/lib/inlinemtg.1.0.js"></script>'].join("");
 
 var deckStyle;
 
 function parseDecklist(raw) {
 	var decklistContainer = $('<div></div>');
 	var decklist = $('<div></div>').addClass('decklist').addClass('row');
-	
+
 	var column = $('<div></div>').addClass('column');
 	var columns = [column];
 
