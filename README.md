@@ -5,7 +5,7 @@ Generate an HTML version of Magic the Gathering decklists than can be copied on 
 
 ## Use
 
-Use it online at: http://jeremyneiman.com/mtg/
+Use it online at: https://docmarionum1.github.io/mtg-html-decklist-generator/
 
 ## Contributing
 
